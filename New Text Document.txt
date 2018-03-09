@@ -1,0 +1,14 @@
+ Subject maths1 = new Subject("maths 1 ", 111);
+            Subject physics1 = new Subject("physics1",112);
+
+            List<Subject>[] subjects = new List<Subject>[10];
+            for (int i = 0; i < subjects.Length; i++)
+                subjects[i] = new List<Subject>();
+
+            subjects[0].Add(maths1);
+            subjects[0].Add(physics1);
+
+            Test.GetGrade(subjects);
+            
+            
+            Console.In.ReadLine();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ElawadyDataStructureTest;
 
 namespace ConsoleApplication1
 {
@@ -83,8 +84,86 @@ namespace ConsoleApplication1
             ElawadyDataStructureTest.Subject RE = new ElawadyDataStructureTest.Subject("Robotics Engineering", 524);
             ElawadyDataStructureTest.Subject ITDIS = new ElawadyDataStructureTest.Subject("Digital Integrated Systems Implementing and Testing", 524);
             ElawadyDataStructureTest.Subject P_2 = new ElawadyDataStructureTest.Subject("Project 2", 525);
-            int[] y = new int[10];
-            ElawadyDataStructureTest.Test.GetGrade(y);
+           
+            
+            List<Subject>[] subjects = new List<Subject>[10];
+            for (int i = 0; i < subjects.Length; i++)
+            subjects[i] = new List<Subject>();
+            subjects[0].Add(Math_1);
+            subjects[0].Add(Ph_1);
+            subjects[0].Add(Mecha_1);
+            subjects[0].Add(Chem);
+            subjects[0].Add(IntroComp);
+            subjects[0].Add(Eng_1);
+            subjects[1].Add(Math_2);
+            subjects[1].Add(Ph_2);
+            subjects[1].Add(Mecha_2);
+            subjects[1].Add(ProTech);
+            subjects[1].Add(ED_P);
+            subjects[1].Add(Eng_2);
+            subjects[2].Add(Math_3);
+            subjects[2].Add(SProg);
+            subjects[2].Add(DCD);
+            subjects[2].Add(EC_1);
+            subjects[2].Add(E_1);
+            subjects[2].Add(MSWord);
+            subjects[3].Add(Math_4);
+            subjects[3].Add(PA);
+            subjects[3].Add(Mea);
+            subjects[3].Add(EC_2);
+            subjects[3].Add(E_2);
+            subjects[3].Add(TR);
+            subjects[4].Add(DSD);
+            subjects[4].Add(DS);
+            subjects[4].Add(NS);
+            subjects[4].Add(Comm_1);
+            subjects[4].Add(ES);
+            subjects[4].Add(ET);
+            subjects[5].Add(DM);
+            subjects[5].Add(OOP);
+            subjects[5].Add(CA);
+            subjects[5].Add(Mach);
+            subjects[5].Add(Comm_2);
+            subjects[6].Add(ps);
+            subjects[6].Add(dbs);
+            subjects[6].Add(iim);
+            subjects[6].Add(acsy);
+            subjects[6].Add(comal);
+            subjects[6].Add(lancomp);
+            subjects[7].Add(info);
+            subjects[7].Add(c_gra);
+            subjects[7].Add(op_sys);
+            subjects[7].Add(m_c_e);
+            subjects[7].Add(m_a_s);
+            subjects[7].Add(d_o_m_c);
+            subjects[8].Add(AI);
+            subjects[8].Add(CN_1);
+            subjects[8].Add(SE);
+            subjects[8].Add(ECP);
+            subjects[8].Add(PR);
+            subjects[8].Add(DISD);
+            subjects[9].Add(CS);
+            subjects[9].Add(DaSe);
+            subjects[9].Add(CN_2);
+            subjects[9].Add(NN);
+            subjects[9].Add(RE);
+            subjects[9].Add(ITDIS);
+
+
+
+
+
+
+
+
+
+
+
+
+            Test.GetGrade(subjects);
+
+
+            Console.In.ReadLine();
 
             Console.In.Read();
 
