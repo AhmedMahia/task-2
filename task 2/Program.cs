@@ -148,21 +148,7 @@ namespace ConsoleApplication1
             subjects[9].Add(NN);
             subjects[9].Add(RE);
             subjects[9].Add(ITDIS);
-
-
-
-
-
-
-
-
-
-
-
-
             Test.GetGrade(subjects);
-
-
             Console.In.ReadLine();
 
             Console.In.Read();
